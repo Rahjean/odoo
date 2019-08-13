@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="view_personal_information_birthdate_date_x" model="ir.ui.view">
+      <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='lead']" position="after">
+                 <page string="Information Personnel" >
+                   <group>
+                     <tree>
+                        <field string='facebook' name='facebook' /><br/>
+                        <field string='linkedin' name='linkedin' />
+                       </tree>
+                    </group>   
+                 </page>
+             </xpath>
+        </field>
+    </record>
+
+</odoo>
